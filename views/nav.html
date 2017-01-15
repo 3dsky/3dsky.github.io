@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="navbar-header">
+    <div class="logo hidden-xs hidden-sm">
+      <div>Chang <span>Liu</span></div>
+    </div>
+  </div>
+  <div id="nav-menu" class="visible-xs" data-ng-click="isCollapsed = !isCollapsed"></div>
+  <div class="navbar-right" uib-collapse="isCollapsed" data-ng-init="isCollapsed=true">
+    <ul class="nav navbar-nav">
+      <li du-scrollspy="home"><a href="#home" du-smooth-scroll><span>Home</span></a></li>
+      <li du-scrollspy="aboutme"><a href="#aboutme" du-smooth-scroll><span>About me</span></a></li>
+      <li du-scrollspy="skills"><a href="#skills" du-smooth-scroll><span>Skills</span></a></li>
+      <li du-scrollspy="resume"><a href="#resume" du-smooth-scroll><span>Resume</span></a></li>
+      <li du-scrollspy="portfolio"><a href="#portfolio" du-smooth-scroll><span>Portfolio</span></a></li>
+      <li du-scrollspy="contact"><a href="#contact" du-smooth-scroll><span>Contact</span></a></li>
+    </ul>
+  </div>
+</div>

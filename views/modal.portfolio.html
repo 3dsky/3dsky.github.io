@@ -1,0 +1,19 @@
+<div class="portfolio-header modal-header" style="padding: 10px 15px;">
+  <button type="button" class="close" aria-label="Close" data-ng-click="vm.cancel()"><span aria-hidden="true">&times;</span></button>
+  <h5 class="modal-title">{{vm.detail.title}}</h5>
+</div>
+<div class="modal-body">
+  <div uib-carousel interval="vm.myInterval" active="vm.active">
+    <div uib-slide ng-repeat="slide in vm.detail.slides" index="$index">
+      <img ng-src="{{slide}}" style="margin:auto;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h5 style="font-weight:bold;margin-top:10px;margin-bottom:10px;">{{vm.detail.date}}</h5>
+      <p style="margin-bottom:10px;" ng-bind-html="vm.detail.description">
+      </p>
+      <a data-ng-href="{{vm.detail.link}}" target="_blank" class="btn btn-xs btn-primary">More Info</a>
+    </div>
+  </div>
+</div>
